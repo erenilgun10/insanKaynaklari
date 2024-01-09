@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="4e04af87c7294fe98ef6fe03f0e8f3f7" Name="Diagram1">
+        <EntityTypeShape EntityType="insanKaynaklariModel.Application" Width="1.5" PointX="5.25" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="insanKaynaklariModel.Business" Width="1.5" PointX="3" PointY="7.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="insanKaynaklariModel.Department" Width="1.5" PointX="3" PointY="10.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="insanKaynaklariModel.Education" Width="1.5" PointX="0.75" PointY="4.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="insanKaynaklariModel.GeneralSituation" Width="1.5" PointX="0.75" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="insanKaynaklariModel.Person" Width="1.5" PointX="3" PointY="3.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="insanKaynaklariModel.User" Width="1.5" PointX="5.375" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="insanKaynaklariModel.Worker" Width="1.5" PointX="5.25" PointY="0.75" IsExpanded="true" />
+        <AssociationConnector Association="insanKaynaklariModel.FK__Applicati__Perso__412EB0B6" ManuallyRouted="false" />
+        <AssociationConnector Association="insanKaynaklariModel.FK__Departmen__Busin__440B1D61" ManuallyRouted="false" />
+        <AssociationConnector Association="insanKaynaklariModel.FK__Worker__Business__47DBAE45" ManuallyRouted="false" />
+        <AssociationConnector Association="insanKaynaklariModel.FK__Worker__Departme__48CFD27E" ManuallyRouted="false" />
+        <AssociationConnector Association="insanKaynaklariModel.FK__Person__Educatio__656C112C" ManuallyRouted="false" />
+        <AssociationConnector Association="insanKaynaklariModel.FK__Person__GeneralS__66603565" ManuallyRouted="false" />
+        <AssociationConnector Association="insanKaynaklariModel.FK__Worker__PersonId__46E78A0C" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="insanKaynaklariModel.UserRole" Width="1.5" PointX="7.375" PointY="0.875" />
+        <AssociationConnector Association="insanKaynaklariModel.FK__Worker__RoleId__18EBB532" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

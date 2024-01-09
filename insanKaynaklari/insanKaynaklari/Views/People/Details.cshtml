@@ -1,0 +1,72 @@
+﻿@model insanKaynaklari.Entities.Person
+
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Details</title>
+</head>
+<body>
+    <div>
+        <h4>Person</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.NAME)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.NAME)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.SURNAME)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.SURNAME)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.BIRTHDAY)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.BIRTHDAY)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.ADDRESS)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.ADDRESS)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.Education.Status)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Education.Status)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.GeneralSituation.Married)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.GeneralSituation.Married)
+            </dd>
+    
+        </dl>
+    </div>
+    <p>
+        @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+</body>
+</html>
