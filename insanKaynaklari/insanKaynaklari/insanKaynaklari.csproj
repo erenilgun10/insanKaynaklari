@@ -132,6 +132,7 @@
     <Compile Include="Controllers\ApplicationsController.cs" />
     <Compile Include="Controllers\BusinessesController.cs" />
     <Compile Include="Controllers\DepartmentsController.cs" />
+    <Compile Include="Controllers\EducationsController.cs" />
     <Compile Include="Controllers\GeneralSituationsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\PeopleController.cs" />
@@ -191,22 +192,27 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Content\bootstrap-grid.css" />
-    <Content Include="Content\bootstrap-grid.min.css" />
-    <Content Include="Content\bootstrap-grid.rtl.css" />
-    <Content Include="Content\bootstrap-grid.rtl.min.css" />
-    <Content Include="Content\bootstrap-reboot.css" />
-    <Content Include="Content\bootstrap-reboot.min.css" />
-    <Content Include="Content\bootstrap-reboot.rtl.css" />
-    <Content Include="Content\bootstrap-reboot.rtl.min.css" />
-    <Content Include="Content\bootstrap-utilities.css" />
-    <Content Include="Content\bootstrap-utilities.min.css" />
-    <Content Include="Content\bootstrap-utilities.rtl.css" />
-    <Content Include="Content\bootstrap-utilities.rtl.min.css" />
-    <Content Include="Content\bootstrap.css" />
-    <Content Include="Content\bootstrap.min.css" />
-    <Content Include="Content\bootstrap.rtl.css" />
-    <Content Include="Content\bootstrap.rtl.min.css" />
+    <Content Include="Content\Content2\bootstrap-grid.css" />
+    <Content Include="Content\Content2\bootstrap-grid.min.css" />
+    <Content Include="Content\Content2\bootstrap-grid.rtl.css" />
+    <Content Include="Content\Content2\bootstrap-grid.rtl.min.css" />
+    <Content Include="Content\Content2\bootstrap-reboot.css" />
+    <Content Include="Content\Content2\bootstrap-reboot.min.css" />
+    <Content Include="Content\Content2\bootstrap-reboot.rtl.css" />
+    <Content Include="Content\Content2\bootstrap-reboot.rtl.min.css" />
+    <Content Include="Content\Content2\bootstrap-utilities.css" />
+    <Content Include="Content\Content2\bootstrap-utilities.min.css" />
+    <Content Include="Content\Content2\bootstrap-utilities.rtl.css" />
+    <Content Include="Content\Content2\bootstrap-utilities.rtl.min.css" />
+    <Content Include="Content\Content2\bootstrap.css" />
+    <Content Include="Content\Content2\bootstrap.min.css" />
+    <Content Include="Content\Content2\bootstrap.rtl.css" />
+    <Content Include="Content\Content2\bootstrap.rtl.min.css" />
+    <Content Include="css\styles.css" />
+    <Content Include="demo\chart-area-demo.js" />
+    <Content Include="demo\chart-bar-demo.js" />
+    <Content Include="demo\chart-pie-demo.js" />
+    <Content Include="demo\datatables-demo.js" />
     <Content Include="Entities\insanKaynaklari.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>insanKaynaklari.Context.cs</LastGenOutput>
@@ -219,13 +225,15 @@
     </Content>
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
-    <Content Include="Content\Site.css" />
-    <Content Include="Scripts\bootstrap.bundle.js" />
-    <Content Include="Scripts\bootstrap.bundle.min.js" />
-    <Content Include="Scripts\bootstrap.esm.js" />
-    <Content Include="Scripts\bootstrap.esm.min.js" />
-    <Content Include="Scripts\bootstrap.js" />
-    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Content\Content2\Site.css" />
+    <Content Include="js\datatables-simple-demo.js" />
+    <Content Include="js\scripts.js" />
+    <Content Include="Scripts\Script1\bootstrap.bundle.js" />
+    <Content Include="Scripts\Script1\bootstrap.bundle.min.js" />
+    <Content Include="Scripts\Script1\bootstrap.esm.js" />
+    <Content Include="Scripts\Script1\bootstrap.esm.min.js" />
+    <Content Include="Scripts\Script1\bootstrap.js" />
+    <Content Include="Scripts\Script1\bootstrap.min.js" />
     <EntityDeploy Include="Entities\insanKaynaklari.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>insanKaynaklari.Designer.cs</LastGenOutput>
@@ -237,17 +245,17 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
-    <None Include="Scripts\jquery-3.4.1.intellisense.js" />
-    <Content Include="Scripts\jquery-3.4.1.js" />
-    <Content Include="Scripts\jquery-3.4.1.min.js" />
-    <Content Include="Scripts\jquery-3.4.1.slim.js" />
-    <Content Include="Scripts\jquery-3.4.1.slim.min.js" />
-    <None Include="Scripts\jquery.validate-vsdoc.js" />
-    <Content Include="Scripts\jquery.validate.js" />
-    <Content Include="Scripts\jquery.validate.min.js" />
-    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
-    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
-    <Content Include="Scripts\modernizr-2.8.3.js" />
+    <None Include="Scripts\Script1\jquery-3.4.1.intellisense.js" />
+    <Content Include="Scripts\Script1\jquery-3.4.1.js" />
+    <Content Include="Scripts\Script1\jquery-3.4.1.min.js" />
+    <Content Include="Scripts\Script1\jquery-3.4.1.slim.js" />
+    <Content Include="Scripts\Script1\jquery-3.4.1.slim.min.js" />
+    <None Include="Scripts\Script1\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\Script1\jquery.validate.js" />
+    <Content Include="Scripts\Script1\jquery.validate.min.js" />
+    <Content Include="Scripts\Script1\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\Script1\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\Script1\modernizr-2.8.3.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -258,14 +266,12 @@
     <Content Include="Views\Web.config" />
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
-    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\_LayoutPage1.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
-    <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\Users\Create.cshtml" />
-    <Content Include="Views\Users\Delete.cshtml" />
-    <Content Include="Views\Users\Index.cshtml" />
-    <Content Include="Views\Users\Login.cshtml" />
+    <Content Include="Views\Home\Login.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Applications\Create.cshtml" />
     <Content Include="Views\Applications\Delete.cshtml" />
     <Content Include="Views\Applications\Details.cshtml" />
@@ -281,6 +287,11 @@
     <Content Include="Views\Departments\Details.cshtml" />
     <Content Include="Views\Departments\Edit.cshtml" />
     <Content Include="Views\Departments\Index.cshtml" />
+    <Content Include="Views\Educations\Create.cshtml" />
+    <Content Include="Views\Educations\Delete.cshtml" />
+    <Content Include="Views\Educations\Details.cshtml" />
+    <Content Include="Views\Educations\Edit.cshtml" />
+    <Content Include="Views\Educations\Index.cshtml" />
     <Content Include="Views\GeneralSituations\Create.cshtml" />
     <Content Include="Views\GeneralSituations\Delete.cshtml" />
     <Content Include="Views\GeneralSituations\Details.cshtml" />
@@ -296,6 +307,11 @@
     <Content Include="Views\UserRoles\Details.cshtml" />
     <Content Include="Views\UserRoles\Edit.cshtml" />
     <Content Include="Views\UserRoles\Index.cshtml" />
+    <Content Include="Views\Users\Create.cshtml" />
+    <Content Include="Views\Users\Delete.cshtml" />
+    <Content Include="Views\Users\Details.cshtml" />
+    <Content Include="Views\Users\Edit.cshtml" />
+    <Content Include="Views\Users\Index.cshtml" />
     <Content Include="Views\Workers\Create.cshtml" />
     <Content Include="Views\Workers\Delete.cshtml" />
     <Content Include="Views\Workers\Details.cshtml" />
@@ -304,34 +320,33 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Content\bootstrap.rtl.min.css.map" />
-    <Content Include="Content\bootstrap.rtl.css.map" />
-    <Content Include="Content\bootstrap.min.css.map" />
-    <Content Include="Content\bootstrap.css.map" />
-    <Content Include="Content\bootstrap-utilities.rtl.min.css.map" />
-    <Content Include="Content\bootstrap-utilities.rtl.css.map" />
-    <Content Include="Content\bootstrap-utilities.min.css.map" />
-    <Content Include="Content\bootstrap-utilities.css.map" />
-    <Content Include="Content\bootstrap-reboot.rtl.min.css.map" />
-    <Content Include="Content\bootstrap-reboot.rtl.css.map" />
-    <Content Include="Content\bootstrap-reboot.min.css.map" />
-    <Content Include="Content\bootstrap-reboot.css.map" />
-    <Content Include="Content\bootstrap-grid.rtl.min.css.map" />
-    <Content Include="Content\bootstrap-grid.rtl.css.map" />
-    <Content Include="Content\bootstrap-grid.min.css.map" />
-    <Content Include="Content\bootstrap-grid.css.map" />
+    <Content Include="Content\Content2\bootstrap.rtl.min.css.map" />
+    <Content Include="Content\Content2\bootstrap.rtl.css.map" />
+    <Content Include="Content\Content2\bootstrap.min.css.map" />
+    <Content Include="Content\Content2\bootstrap.css.map" />
+    <Content Include="Content\Content2\bootstrap-utilities.rtl.min.css.map" />
+    <Content Include="Content\Content2\bootstrap-utilities.rtl.css.map" />
+    <Content Include="Content\Content2\bootstrap-utilities.min.css.map" />
+    <Content Include="Content\Content2\bootstrap-utilities.css.map" />
+    <Content Include="Content\Content2\bootstrap-reboot.rtl.min.css.map" />
+    <Content Include="Content\Content2\bootstrap-reboot.rtl.css.map" />
+    <Content Include="Content\Content2\bootstrap-reboot.min.css.map" />
+    <Content Include="Content\Content2\bootstrap-reboot.css.map" />
+    <Content Include="Content\Content2\bootstrap-grid.rtl.min.css.map" />
+    <Content Include="Content\Content2\bootstrap-grid.rtl.css.map" />
+    <Content Include="Content\Content2\bootstrap-grid.min.css.map" />
+    <Content Include="Content\Content2\bootstrap-grid.css.map" />
     <None Include="packages.config" />
-    <Content Include="Scripts\bootstrap.min.js.map" />
-    <Content Include="Scripts\bootstrap.js.map" />
-    <Content Include="Scripts\bootstrap.esm.min.js.map" />
-    <Content Include="Scripts\bootstrap.esm.js.map" />
-    <Content Include="Scripts\bootstrap.bundle.min.js.map" />
-    <Content Include="Scripts\bootstrap.bundle.js.map" />
-    <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
-    <Content Include="Scripts\jquery-3.4.1.min.map" />
+    <Content Include="Scripts\Script1\bootstrap.min.js.map" />
+    <Content Include="Scripts\Script1\bootstrap.js.map" />
+    <Content Include="Scripts\Script1\bootstrap.esm.min.js.map" />
+    <Content Include="Scripts\Script1\bootstrap.esm.js.map" />
+    <Content Include="Scripts\Script1\bootstrap.bundle.min.js.map" />
+    <Content Include="Scripts\Script1\bootstrap.bundle.js.map" />
+    <Content Include="Scripts\Script1\jquery-3.4.1.slim.min.map" />
+    <Content Include="Scripts\Script1\jquery-3.4.1.min.map" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
