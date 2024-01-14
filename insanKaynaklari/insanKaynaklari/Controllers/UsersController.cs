@@ -6,7 +6,6 @@ using System.Linq;
 using System.Net;
 using System.Web;
 using System.Web.Mvc;
-using System.Web.Security;
 using insanKaynaklari.Entities;
 
 namespace insanKaynaklari.Controllers
@@ -21,51 +20,74 @@ namespace insanKaynaklari.Controllers
             return View(db.Users.ToList());
         }
 
-
-        // GET: Home/Login
-        public ActionResult Login()
+        // GET: Users/Details/5
+        public ActionResult Details(int? id)
         {
-            return View();
-        }
-
-        // POST: Home/Login
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Login(User model)
-        {
-            if (ModelState.IsValid)
+            if (id == null)
             {
-                var user = db.Users.FirstOrDefault(u => u.Username == model.Username && u.Password == model.Password);
-
-                if (user != null)
-                {
-                    FormsAuthentication.RedirectFromLoginPage(user.Username, false);
-                    // Kullanıcı adını yazdır
-                    ViewBag.UserName = user.Username;
-                    return RedirectToAction("Index", "Home");
-                }
-                else
-                {
-                    ModelState.AddModelError("", "Kullanıcı Adı ya da Şifre Hatalı");
-                }
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-
-            return View(model);
+            User user = db.Users.Find(id);
+            if (user == null)
+            {
+                return HttpNotFound();
+            }
+            return View(user);
         }
 
-        // GET: Home/Logout
-        public ActionResult Logout()
-        {
-            FormsAuthentication.SignOut();
-            return RedirectToAction("Login", "Home");
-        }
         // GET: Users/Create
         public ActionResult Create()
         {
             return View();
         }
- 
 
+        // POST: Users/Create
+        // To protect from overposting attacks, enable the specific properties you want to bind to, for 
+        // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Create([Bind(Include = "ID,Username,Password")] User user)
+        {
+            if (ModelState.IsValid)
+            {
+                db.Users.Add(user);
+                db.SaveChanges();
+                return RedirectToAction("Index");
+            }
+
+            return View(user);
+        }
+
+        // GET: Users/Edit/5
+        public ActionResult Edit(int? id)
+        {
+            if (id == null)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
+            User user = db.Users.Find(id);
+            if (user == null)
+            {
+                return HttpNotFound();
+            }
+            return View(user);
+        }
+
+        // POST: Users/Edit/5
+        // To protect from overposting attacks, enable the specific properties you want to bind to, for 
+        // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Edit([Bind(Include = "ID,Username,Password")] User user)
+        {
+            if (ModelState.IsValid)
+            {
+                db.Entry(user).State = EntityState.Modified;
+                db.SaveChanges();
+                return RedirectToAction("Index");
+            }
+            return View(user);
+        }
 
         // GET: Users/Delete/5
         public ActionResult Delete(int? id)
